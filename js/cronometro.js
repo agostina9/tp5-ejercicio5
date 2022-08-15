@@ -1,7 +1,7 @@
-let temporizaodr= document.getElementById('tiempo');
    let btnEmpezar=document.getElementById('btn-empezar');
    let btnParar= document.getElementById('btn-parar');
    let btnReset= document.getElementById('btn-reset');
+   document.getElementById("temporizador").innerHTML="00:00:00.00";
   
     let tiempo=0;
     let intervalo=0;
@@ -30,7 +30,7 @@ function iniciar(){
  function reset(){
 verificador=false;
 tiempo=0;
-temporizador.innerHTML= tiempo + '00:00:00.00';
+temporizador.innerHTML= tiempo + '0:00:00.00';
  clearInterval(intervalo);
  }
 
